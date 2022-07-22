@@ -1,0 +1,25 @@
+@media screen and (max-width: 768px) {
+ 
+  /* li.fade {
+    opacity: 1;
+  } */
+  .nav {
+    position: relative;
+  }
+  .lcon {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    transform: translate(-5%, -50%);
+    z-index: 3;
+  }
+  .line {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin: 3px;
+  }
+  .landing {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,311 @@
+.App {
+  font-size: 28px;
+  color: #fff;
+  .top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .left {
+    display: flex;
+    gap: 0.5rem;
+    p {
+      font-size: 50px;
+    }
+    img {
+      width: 60px;
+      fill: #fff;
+    }
+  }
+  .nav,
+  .links {
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    a {
+      font-size: 28px;
+      color: #fff;
+      transition: all 0.3s ease;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .ad {
+      display: flex;
+      justify-content: center;
+    }
+    button {
+      border: 2px solid #fff;
+      background-color: transparent;
+      padding: 0px 30px;
+      height: 55px;
+      font-size: 28px;
+      color: #fff;
+      border-radius: 5rem;
+      margin-top: -7px;
+      transition: all 0.3s ease;
+      &:hover {
+        transform: scale(0.9);
+      }
+    }
+  }
+  .menu {
+    display: none;
+  }
+  .center {
+    display: flex;
+    justify-content: space-between;
+
+    .main {
+      width: 50rem;
+      margin-top: 20rem;
+      h1 {
+        font-size: 90px;
+        margin-bottom: 2rem;
+        span {
+          color: #6bf9fe;
+        }
+      }
+      p {
+        margin-bottom: 2rem;
+      }
+      .buttons {
+        display: flex;
+        justify-content: flex-start;
+        gap: 2rem;
+
+        button {
+          background-color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 5rem;
+          color: #019ca1;
+          border: none;
+          padding: 10px 30px;
+          font-size: 28px;
+          transition: all 0.4s ease;
+          &:hover {
+            background-color: #019ca1;
+            color: #fff;
+          }
+          .apple {
+            margin-top: -5px;
+          }
+          .play {
+            font-size: 26px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .aside {
+      img {
+        width: 50rem;
+        margin-top: 10rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .App {
+    font-size: 20px;
+    .menu {
+      display: none;
+    }
+    .left {
+      display: flex;
+      gap: 0.5rem;
+      p {
+        font-size: 50px;
+      }
+      img {
+        width: 50px;
+        fill: #fff;
+      }
+    }
+    .links {
+      gap: 1.5rem;
+      margin-top: 1rem;
+      margin-left: 25rem;
+
+      a {
+        font-size: 20px;
+      }
+      .buttons {
+        button {
+          font-size: 10px;
+          padding: 0.1rem 1rem;
+        }
+        .apple {
+          margin-top: 15px;
+          font-size: 15px;
+        }
+        .play {
+          font-size: 15px;
+          margin-right: 5px;
+        }
+      }
+    }
+    .center {
+      gap: 4rem;
+      .main {
+        width: 40rem;
+        h1 {
+          font-size: 60px;
+        }
+      }
+    }
+    .aside {
+      img {
+        width: 30rem;
+        margin-top: 10rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .App {
+    font-size: 16px;
+    .top {
+    }
+    .menu {
+      display: block;
+      font-size: 36px;
+      position: absolute;
+      transform: translate(850%, 0%);
+      z-index: 3;
+    }
+    .left {
+      display: flex;
+      gap: 0.5rem;
+      p {
+        font-size: 30px;
+      }
+      img {
+        width: 20px;
+      }
+    }
+    .nav,
+    .links {
+      display: none;
+      gap: 1rem;
+      margin-top: 1rem;
+      a {
+        font-size: 16px;
+      }
+      button {
+        font-size: 16px;
+        height: 30px;
+      }
+    }
+    .center {
+      flex-direction: column;
+      gap: 2rem;
+
+      .main {
+        width: 20rem;
+        margin-top: 5rem;
+        h1 {
+          font-size: 30px;
+          margin-bottom: 5px;
+        }
+        p {
+          font-size: 10px;
+        }
+        .buttons {
+          gap: 1rem;
+          button {
+            font-size: 10px;
+            padding: 0rem 1rem;
+          }
+          .apple {
+            margin-bottom: -2px;
+            margin-right: 1px;
+            font-size: 15px;
+          }
+          .play {
+            font-size: 12px;
+            width: 15px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .aside {
+      img {
+        width: 15rem !important;
+        margin-top: 1rem !important;
+      }
+    }
+    .right {
+      position: absolute !important;
+    }
+    .links {
+      position: fixed;
+      display: flex;
+      align-items: center;
+      background-image: linear-gradient(to right, #20b961, #1fc2bc);
+      transform: translate(-5%, -5%);
+      height: 105vh;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(100px at 90% -10%);
+      -webkit-clip-path: circle(100px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: all;
+      gap: 0rem;
+    }
+    .nav {
+      position: fixed;
+      display: flex;
+      align-items: center;
+      background-image: linear-gradient(to right, #20a2b9, #1fc2bc);
+      transform: translate(-5%, -5%);
+      height: 105vh;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(1500px at 90% -20%);
+      -webkit-clip-path: circle(1500px at 90% -20%);
+      transition: all 1s ease-out;
+      pointer-events: all;
+      gap: 0rem;
+    }
+    .nav a {
+      opacity: 1;
+    }
+    .links a {
+      opacity: 0;
+    }
+    .nav a:nth-child(1) {
+      transition: all 0.5s ease 0.2s;
+    }
+    .nav a:nth-child(2) {
+      transition: all 0.5s ease 0.4s;
+    }
+    .nav a:nth-child(3) {
+      transition: all 0.5s ease 0.6s;
+    }
+    .links a:nth-child(1) {
+      transition: all 0.5s ease 0.2s;
+    }
+    .links a:nth-child(2) {
+      transition: all 0.5s ease 0.4s;
+    }
+    .links a:nth-child(3) {
+      transition: all 0.5s ease 0.6s;
+    }
+  }
+  @media screen and (max-width: 414px) {
+    .main {
+      margin-top: 10rem !important;
+      h1 {
+        font-size: 34px !important;
+      }
+    }
+  }
+  @media screen and (width: 360px) {
+    .menu {
+      transform: translate(800%, 0%) !important;
+    }
+  }
+}
