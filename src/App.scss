@@ -81,7 +81,7 @@
           border-radius: 5rem;
           color: #019ca1;
           border: none;
-          padding: 10px 30px;
+          padding: 30px 80px;
           font-size: 28px;
           transition: all 0.4s ease;
           &:hover {
@@ -89,11 +89,12 @@
             color: #fff;
           }
           .apple {
-            margin-top: -5px;
+            margin: -5px 8px 0px 0px;
+            font-size: 32px;
           }
           .play {
-            font-size: 26px;
-            margin-right: 5px;
+            font-size: 32px;
+            margin-right: 10px;
           }
         }
       }
@@ -216,12 +217,12 @@
           gap: 1rem;
           button {
             font-size: 10px;
-            padding: 0rem 1rem;
+            padding: 0rem 1.5rem;
           }
           .apple {
-            margin-bottom: -2px;
+            margin-bottom: -2px !important;
             margin-right: 1px;
-            font-size: 15px;
+            font-size: 15px !important;
           }
           .play {
             font-size: 12px;
@@ -248,17 +249,19 @@
       transform: translate(-5%, -5%);
       height: 105vh;
       width: 100%;
+      justify-content: center;
       flex-direction: column;
       clip-path: circle(100px at 90% -10%);
       -webkit-clip-path: circle(100px at 90% -10%);
       transition: all 1s ease-out;
       pointer-events: all;
-      gap: 0rem;
+      gap: 5rem;
     }
     .nav {
       position: fixed;
       display: flex;
       align-items: center;
+      justify-content: center;
       background-image: linear-gradient(to right, #20a2b9, #1fc2bc);
       transform: translate(-5%, -5%);
       height: 105vh;
@@ -268,7 +271,7 @@
       -webkit-clip-path: circle(1500px at 90% -20%);
       transition: all 1s ease-out;
       pointer-events: all;
-      gap: 0rem;
+      gap: 5rem;
     }
     .nav a {
       opacity: 1;
