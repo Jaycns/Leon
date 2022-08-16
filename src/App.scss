@@ -1,6 +1,11 @@
 .App {
   font-size: 28px;
   color: #fff;
+  footer {
+    text-align: center;
+    width: 100%;
+    opacity: 0.5;
+  }
   .top {
     display: flex;
     justify-content: space-between;
@@ -194,7 +199,8 @@
     }
   }
 }
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 900px) {
   .App {
     font-size: 16px;
     .top {
@@ -230,8 +236,8 @@
       }
     }
     .center {
-      flex-direction: column;
-      gap: 2rem;
+      flex-direction: column-reverse;
+      gap: 0rem;
 
       .main {
         width: 20rem;
@@ -264,8 +270,8 @@
     }
     .aside {
       img {
-        width: 15rem !important;
-        margin-top: 1rem !important;
+        width: 22rem !important;
+        margin-top: 4rem !important;
       }
     }
     .right {
@@ -330,7 +336,7 @@
   }
   @media screen and (max-width: 414px) {
     .main {
-      margin-top: 10rem !important;
+      margin-top: -7rem !important;
       h1 {
         font-size: 34px !important;
       }

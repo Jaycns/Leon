@@ -82,32 +82,43 @@ function App() {
               <FaGooglePlay className="play" /> Download
             </button>
           </div>
-          <h1 className="head">Select your region</h1>
-          <form className="" onSubmit={handleSubmit}>
-            <div>
-              <label>State:</label>
-              <select id="" value={names} className="" onChange={handleChange}>
-                {states.map((item) => {
-                  return <option>{item.state}</option>;
-                })}
-              </select>
-            </div>
-            {names !== "" ? (
+
+          <div style={{ display: "none" }}>
+            <h1 className="head">Select your region</h1>
+            <form className="" onSubmit={handleSubmit}>
               <div>
-                <label>LGA:</label>
-                <select id="" className="">
-                  {areas.map((item) => {
-                    return <option>{item}</option>;
+                <label>State:</label>
+                <select
+                  id=""
+                  value={names}
+                  className=""
+                  onChange={handleChange}
+                >
+                  {states.map((item) => {
+                    return <option>{item.state}</option>;
                   })}
                 </select>
               </div>
-            ) : null}
-          </form>
+              {names !== "" ? (
+                <div>
+                  <label>LGA:</label>
+                  <select id="" className="">
+                    {areas.map((item) => {
+                      return <option>{item}</option>;
+                    })}
+                  </select>
+                </div>
+              ) : null}
+            </form>
+          </div>
         </main>
         <aside className="aside">
           <img src={Phone} alt="A big phone " />
         </aside>
       </div>
+      <footer style={{ display: open ? "none" : "block" }}>
+        <p>Design by Jaycn</p>
+      </footer>
     </div>
   );
 }
