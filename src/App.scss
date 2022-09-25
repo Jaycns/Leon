@@ -241,7 +241,7 @@
 
       .main {
         width: 20rem;
-        margin-top: 5rem;
+        margin-top: 1rem;
         h1 {
           font-size: 30px;
           margin-bottom: 5px;
@@ -269,8 +269,10 @@
       }
     }
     .aside {
+      display: flex;
+      justify-content: center;
       img {
-        width: 22rem !important;
+        width: 15rem !important;
         margin-top: 4rem !important;
       }
     }
@@ -336,7 +338,7 @@
   }
   @media screen and (max-width: 414px) {
     .main {
-      margin-top: -1rem !important;
+      margin-top: 0rem;
       h1 {
         font-size: 34px !important;
       }
